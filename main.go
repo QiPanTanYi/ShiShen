@@ -1,9 +1,12 @@
 package main
 
 import (
-	"fmt"
+	"shishen/src"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	fmt.Println("Hello World!")
+	main := gin.Default()
+	main.POST("/douyin/publish/action/",src.VideoPost)
+	main.Run()
 }

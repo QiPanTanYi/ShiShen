@@ -20,7 +20,7 @@ func VideoPost(c *gin.Context) {
 		return
 	}
 	PostTime := time.Now().Unix()                                         //上传时间戳
-	Route := "./Video/" + strconv.FormatInt(PostTime, 10) + file.Filename //存储路径
+	Route := "./video/" + strconv.FormatInt(PostTime, 10) + file.Filename //存储路径
 	err = c.SaveUploadedFile(file, Route)                                 //保存上传文件
 	if err != nil {
 		log.Println("File upload error: ", err)

@@ -1,4 +1,4 @@
-package data
+package src
 
 type PublicInf struct {
 	Name          string `json:"name"`
@@ -32,9 +32,14 @@ type Comment struct {
 	CreateDate string `json:"create_date"`
 }
 
-type message struct {
+type Message struct {
 	ToUser int `json:"-"`
 	FromUser int `json:"-"`
 	Content string `json:"content"`
 	CreateTime string `json:"create_time"`
+}
+
+type RespHead struct {
+	StatusCode int `json:"status_code"`
+	StatusMsg string `json:"status_msg"`
 }

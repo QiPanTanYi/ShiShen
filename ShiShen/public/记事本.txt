@@ -1,0 +1,8 @@
+编写 douyin文件夹内的gin框架（6个）
+message.go需要按要求修改
+controller文件夹下的demo_data.go需要复制写一份
+router.go重新配置为douyin
+
+
+publish.go对应list.pb.go(2个)
+user.go对应login.pb.go(3个)
